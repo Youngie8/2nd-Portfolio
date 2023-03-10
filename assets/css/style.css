@@ -1,0 +1,141 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+html, body{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    color: #4d455d;
+}
+ul{
+    padding-left: 0;
+}
+li{
+    list-style: none;
+}
+.side-bar {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    transform: translate(0);
+    transition: 500ms;
+}
+.side-icons{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 30px;
+    font-size: 20px;
+}
+.side-list{
+    margin: 2rem 0;
+}
+.my-profile {
+padding: 3rem 0;
+}
+.li{
+    transition: 400ms;
+    pointer-events:none ;
+}
+.li:hover {
+    transform: scaleY(1.2);
+}
+.list-1{
+    transition: 400ms;
+    font-size: 1.2rem;
+    padding: 0 2rem;
+    pointer-events: auto;
+    word-spacing: 0.2rem;
+    line-height: 3rem;
+}
+.avi {
+    display: flex;
+    justify-content: center;
+}
+.avi-caption{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.hover-success:hover{
+    color: green;
+}
+.hover-gold:hover{
+    color: gold;
+    transition: 500ms;
+}
+.profile-pic{
+    height: 120px;
+    width: 120px;
+    border: 8px solid green;
+    border-radius: 50%;
+    padding: 8px;
+}
+.toggle{
+    transform: translate(-100%);
+}
+/* Buttons */
+.togglebtn{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+}
+.togglebtn:hover{
+    animation: bounce 800ms infinite ease-in-out;
+}
+.closebtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    background: transparent;
+    transition: 600ms;
+}
+.closebtn:hover{
+    transform: rotate(360deg);
+}
+
+@keyframes bounce {
+    0%{
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+@media (max-width: 1024px) {
+    .side-bar {
+        width: 30%;
+    }
+}
+@media (max-width:768px) {
+    .side-bar {
+        width: 37.5%;
+        transform: translate(-100%);
+    }
+    .toggle {
+        transform: translate(0%)
+    }
+}
+@media(max-width:540px) {
+    .side-bar{
+        width: 70%;
+        
+    }
+}
