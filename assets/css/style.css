@@ -26,7 +26,8 @@ li{
     top:0;
     text-align: center;
     transform: translateY(0%);
-    transition: 500ms;  
+    transition: 500ms; 
+    padding-top: 10px; 
 }
 .top-block{
     transform: translateY(-100%);
@@ -41,6 +42,7 @@ li{
     transform: translate(-100%);
     transition: 500ms;
     transition-delay: 500ms;
+    border-right: 1px solid #4d455d;
 }
 .side-icons{
     display: flex;
@@ -148,15 +150,14 @@ padding: 3rem 0;
 @media (max-width:768px) {
     .side-bar {
         width: 37.5%;
-        transform: translate(-100%);
-    }
-    .toggle {
-        transform: translate(0%)
     }
 }
 @media(max-width:540px) {
     .side-bar{
         width: 70%;
         
+    }
+    .top{
+        text-align: left;
     }
 }
