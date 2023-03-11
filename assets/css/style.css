@@ -17,12 +17,30 @@ ul{
 li{
     list-style: none;
 }
+.top{
+    width: 100%;
+    height: 10%;
+    background: #000;
+    color: #fff;
+    position:fixed;
+    top:0;
+    text-align: center;
+    transform: translateY(0%);
+    transition: 500ms;  
+}
+.top-block{
+    transform: translateY(-100%);
+}
 .side-bar {
-    position: relative;
+    transition-delay: 500ms;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 25%;
     height: 100%;
-    transform: translate(0);
+    transform: translate(-100%);
     transition: 500ms;
+    transition-delay: 500ms;
 }
 .side-icons{
     display: flex;
@@ -75,18 +93,21 @@ padding: 3rem 0;
     padding: 8px;
 }
 .toggle{
-    transform: translate(-100%);
+    transform: translate(0%);
 }
 /* Buttons */
 .togglebtn{
     position: fixed;
-    top: 10px;
+    top: 1%;
     right: 10px;
     height: 50px;
     width: 50px;
     font-size: 30px;
     border: none;
     border-radius: 50%;
+    transition: 500ms;
+    color: #fff;
+    background: transparent;
 }
 .togglebtn:hover{
     animation: bounce 800ms infinite ease-in-out;
