@@ -14,15 +14,16 @@ function animateOnScroll() {
     
     if (elementTop < viewportHeight && elementBottom >= 0) {
       element.classList.add('active');
-    } else {
-      element.classList.remove('active');
-    }
+    } //else {
+    //   element.classList.remove('active');
+    // }
   });
 }
 
 window.addEventListener('scroll', animateOnScroll);
 
 window.addEventListener('load', animateOnScroll);
+
 // Button functions
 toggleBtn.addEventListener('click', function(){
     sideBar.classList.toggle('toggle');
