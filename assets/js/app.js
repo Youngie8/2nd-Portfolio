@@ -14,9 +14,7 @@ function animateOnScroll() {
     
     if (elementTop < viewportHeight && elementBottom >= 0) {
       element.classList.add('active');
-    } //else {
-    //   element.classList.remove('active');
-    // }
+    } 
   });
 }
 

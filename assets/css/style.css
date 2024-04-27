@@ -20,10 +20,13 @@ ul{
 li{
     list-style: none;
 }
-.card:hover{
+img {
+    height: 9rem;
+}
+/* .card:hover{
     filter: opacity(0.7);
     transition: 500ms;
-}
+} */
 .container {
     margin-top: 10%;
 }
@@ -64,7 +67,7 @@ li{
     margin: 2rem 0;
 }
 .my-profile {
-padding: 3rem 0;
+    padding: 3rem 0;
 }
 .li{
     transition: 400ms;
@@ -148,6 +151,17 @@ padding: 3rem 0;
 .fade-in.active {
     opacity: 1;
     transform: translateX(0px);
+}
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btns a {
+    border: 1.5px solid #4d455d;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
 }
   
 @keyframes bounce {
